@@ -22,7 +22,7 @@ services:
       - PG_USERNAME=${PG_USERNAME}
       - PG_PASSWORD=${PG_PASSWORD}
   pacientes_c:
-    image: soyachin/api-pacientes
+    image: soyachin/api-patients
     ports: 
       - 8083:8000
     environment:
