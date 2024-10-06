@@ -3,7 +3,7 @@ version: '3.3'
 services:
   historias_c:
     image: soyachin/api-historia-clinica
-    ports: 8082:8000
+    ports: 8081:8000
     environment:
       - MYSQL_PORT=${MYSQL_PORT}
       - MYSQL_HOST=${MYSQL_HOST}
@@ -12,7 +12,7 @@ services:
       - MYSQL_USERNAME=${MYSQL_USERNAME}
   doctores_c:
     image: soyachin/api-doctores
-    ports: 8081:3000
+    ports: 8082:3000
     environment:
       - PG_HOST=${PG_HOST}
       - PG_PORT=${PG_PORT}
@@ -21,7 +21,7 @@ services:
       - PG_PASSWORD=${PG_PASSWORD}
   pacientes_c:
     image: soyachin/api-pacientes
-    ports: 8080:8000
+    ports: 8083:8000
     environment:
       - MONGO_URI=${MONGO_URI}    
       
